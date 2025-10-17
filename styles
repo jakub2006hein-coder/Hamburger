@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: #871717;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 0.5em;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 2.5em;
+}
+
+h1, h2, h3 {
+    color: #871717;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #eee;
+    padding: 1em 0;
+}
+
+.menu-list .price {
+    float: right;
+    color: #871717;
+    font-weight: bold;
+}
+
+.reviews {
+    margin-bottom: 1em;
+}
+
+.review-item {
+    background: #f7eded;
+    border-left: 4px solid #871717;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #444;
+}
+
+.add-review form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.add-review input,
+.add-review textarea {
+    padding: 0.6em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.add-review button {
+    background: #871717;
+    color: #fff;
+    border: none;
+    padding: 0.7em;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.add-review button:hover {
+    background: #b22b2b;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+    background: #f7eded;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.map {
+    margin-top: 1em;
+    text-align: center;
+}
+
+footer {
+    background: #871717;
+    color: #fff;
+    text-align: center;
+    padding: 0.8em 0;
+    margin-top: 2em;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.97em;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+    header nav a {
+        margin: 0 0.5em;
+    }
+}
