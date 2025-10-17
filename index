@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Pilsen Burger House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pilsen Burger House</h1>
+        <nav>
+            <a href="#intro">Domů</a>
+            <a href="#menu">Menu</a>
+            <a href="#reviews">Recenze</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Vítejte v Pilsen Burger House!</h2>
+            <p>
+                Najdete nás v srdci Plzně, kde připravujeme ty nejšťavnatější burgery ve městě. Vše děláme z čerstvých surovin od místních dodavatelů.
+                Máte chuť na klasický cheeseburger, nebo chcete zkusit něco nového? U nás si vybere každý!
+            </p>
+        </section>
+
+        <section id="menu">
+            <h2>Naše menu</h2>
+            <ul class="menu-list">
+                <li>
+                    <h3>Klasický Plzeňský Burger</h3>
+                    <p>Hovězí maso, čedar, salát, rajče, okurka, domácí omáčka, opečená houska</p>
+                    <span class="price">159 Kč</span>
+                </li>
+                <li>
+                    <h3>Pikantní Bohemia Burger</h3>
+                    <p>Hovězí maso, jalapeños, pikantní majonéza, restovaná cibulka, salát, rajče, opečená houska</p>
+                    <span class="price">179 Kč</span>
+                </li>
+                <li>
+                    <h3>Veggie Delight</h3>
+                    <p>Domácí cizrnový "patty", feta sýr, rukola, rajče, česnekovo-jogurtová omáčka, celozrnná houska</p>
+                    <span class="price">149 Kč</span>
+                </li>
+                <li>
+                    <h3>BBQ Bacon Burger</h3>
+                    <p>Hovězí maso, uzená slanina, BBQ omáčka, křupavá cibulka, čedar, salát, rajče, opečená houska</p>
+                    <span class="price">189 Kč</span>
+                </li>
+                <li>
+                    <h3>Kuřecí Burger</h3>
+                    <p>Grilované kuřecí prso, švýcarský sýr, salát, rajče, medovo-hořčičná omáčka, opečená houska</p>
+                    <span class="price">169 Kč</span>
+                </li>
+                <li>
+                    <h3>Hranolky</h3>
+                    <p>Křupavé domácí hranolky s kečupem nebo majonézou</p>
+                    <span class="price">49 Kč</span>
+                </li>
+                <li>
+                    <h3>Cibulové kroužky</h3>
+                    <p>Chrupavé smažené cibulové kroužky s dipem</p>
+                    <span class="price">55 Kč</span>
+                </li>
+                <li>
+                    <h3>Limonáda (0,3l)</h3>
+                    <p>Domácí limonáda: citron, okurka, zázvor (dle denní nabídky)</p>
+                    <span class="price">39 Kč</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="reviews">
+            <h2>Co o nás říkají zákazníci</h2>
+            <div class="reviews" id="reviews-list">
+                <!-- Recenze se načtou pomocí JS -->
+            </div>
+            <div class="add-review">
+                <h3>Přidejte svou recenzi</h3>
+                <form id="review-form">
+                    <input type="text" id="name" placeholder="Vaše jméno" required>
+                    <textarea id="review" placeholder="Napište svou recenzi..." required></textarea>
+                    <button type="submit">Odeslat recenzi</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <address>
+                <strong>Pilsen Burger House</strong><br>
+                Americká 15, 301 00 Plzeň<br>
+                Česká republika<br>
+                Telefon: +420 123 456 789<br>
+                E-mail: <a href="mailto:info@pilsenburger.cz">info@pilsenburger.cz</a>
+            </address>
+            <div class="map">
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=Americká+15,Plzeň,Czech+Republic&zoom=15&size=400x200&key=YOUR_API_KEY" alt="Mapa Pilsen Burger House">
+                <!-- Nahraďte YOUR_API_KEY svým klíčem pro Google Maps Static API, pokud chcete zobrazit skutečnou mapu -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Pilsen Burger House. Všechna práva vyhrazena.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
